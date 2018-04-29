@@ -1,0 +1,17 @@
+﻿@page "{service}/{path}"
+@model RazorPagesTest.Pages.Tests.TestModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+</head>
+<body>
+    some test @(RouteData.Values["service"]) @(RouteData.Values["path"])
+</body>
+</html>
